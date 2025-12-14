@@ -1,44 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login - Online Bus Booking</title>
+    <title>GoBus - Login</title>
 </head>
-
 <body>
 
-    <center>
+<center>
+    <h2>Login Page</h2>
 
-        <!-- Logo -->
-        <img src="img.png" width="200" alt="Bus Logo">
+    <!-- IMPORTANT FIX IS HERE -->
+    <form action="index.html" method="get">
+
+        Username:<br>
+        <input type="text" name="user" required>
         <br><br>
 
-        <!-- Login Heading -->
-        <h2>Online Bus Booking Login</h2>
+        Password:<br>
+        <input type="password" name="pass" required>
+        <br><br>
 
-        <!-- Login Form -->
-        <form onsubmit="return false;">
+        <input type="submit" value="Login">
 
-    Username:<br>
-    <input type="text"><br><br>
+    </form>
 
-    Password:<br>
-    <input type="password"><br><br>
-
-    <button type="button" onclick="window.location.href='index.html'">
-        Login
-    </button>
-
-</form>
-   
-        <br>
-
-        <!-- Link -->
-        <a href="index.html">Back to Home</a>
-
-    </center>
+    <br>
+    <a href="index.html">Back to Home</a>
+</center>
 
 </body>
 </html>
-
-
 
