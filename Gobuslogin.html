@@ -8,30 +8,34 @@
 
 <center>
 
+    <!-- Logo -->
     <img src="img.png" width="200" alt="Bus Logo">
     <br><br>
 
     <h2>Online Bus Booking Login</h2>
 
-    <!-- FIXED FORM -->
-    <form action="index.html" method="get">
+   
+    <b>Username:</b><br>
+    <input type="text" id="username" required>
+    <br><br>
 
-        <b>Username:</b><br>
-        <input type="text" name="username" required>
-        <br><br>
+    <b>Password:</b><br>
+    <input type="password" id="password" required>
+    <br><br>
 
-        <b>Password:</b><br>
-        <input type="password" name="password" required>
-        <br><br>
+    <button onclick="login()">Login</button>
 
-        <input type="submit" value="Login">
-
-    </form>
-
-    <br>
+    <br><br>
     <a href="index.html">Back to Home</a>
 
 </center>
+
+<script>
+    function login() {
+        // No backend, just redirect
+        window.location.href = "index.html";
+    }
+</script>
 
 </body>
 </html>
