@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GoBus - Login</title>
+    <title>Login - Online Bus Booking</title>
 </head>
+
 <body>
 
-<center>
-    <h2>Login Page</h2>
+    <center>
 
-    Username:<br>
-    <input type="text"><br><br>
+        <!-- Logo -->
+        <img src="img.png" width="200" alt="Bus Logo">
+        <br><br>
 
-    Password:<br>
-    <input type="password"><br><br>
+        <!-- Login Heading -->
+        <h2>Online Bus Booking Login</h2>
 
-    <!-- Static Login Button -->
-    <a href="index.html">Login</a>
+        <!-- Login Form -->
+        <form action="index.html" method="post">
 
-    <br><br>
+            <b>Username:</b><br>
+            <input type="text" name="username" required>
+            <br><br>
 
-    <a href="index.html">Back to Home</a>
-</center>
+            <b>Password:</b><br>
+            <input type="password" name="password" required>
+            <br><br>
+
+            <input type="submit" value="Login">
+
+        </form>
+
+        <br>
+
+        <!-- Link -->
+        <a href="index.html">Back to Home</a>
+
+    </center>
 
 </body>
 </html>
