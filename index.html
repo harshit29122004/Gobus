@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Online Bus Ticket Booking</title>
+    <title>GoBus - Login</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #e3f2fd;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-box {
+            background: white;
+            padding: 25px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 90%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #aaa;
+        }
+
+        input[type="submit"] {
+            background: #1976d2;
+            color: white;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #0d47a1;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1976d2;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Header -->
-    <center>
-        <h1><b>🚌 Online Bus Ticket Booking</b></h1>
-        <p><i>Safe | Easy | Fast Travel</i></p>
-    </center>
+<div class="login-box">
+    <h2>GoBus Login</h2>
 
-    <hr>
+    <!-- method changed to POST (important) -->
+    <form action="index.html" method="post">
 
-    <!-- Navigation Links -->
-    <center>
-        <a href="index.html">Home</a> |
-        <a href="Gobuslogin.html">Login</a> |
-        <a href="#">Register</a> |
-        <a href="#">Contact Us</a>
-    </center>
+        Username<br>
+        <input type="text" name="user" required><br><br>
 
-    <hr>
+        Password<br>
+        <input type="password" name="pass" required><br><br>
 
-    <!-- Image -->
-    <center>
-        <img src="img.png" width="300" alt="Bus Image">
-    </center>
+        <input type="submit" value="Login">
+    </form>
 
-    <hr>
-
-    <!-- About Section -->
-    <h2>About Our Service</h2>
-    <p>
-        <b>Online Bus Ticket Booking</b> helps passengers book bus tickets easily from anywhere.
-        We provide a fast and reliable booking experience.
-    </p>
-
-    <!-- List -->
-    <h3>Why Choose Us?</h3>
-    <ul>
-        <li>Easy Ticket Booking</li>
-        <li>Secure Payments</li>
-        <li>24/7 Customer Support</li>
-    </ul>
-
-    <!-- Table -->
-    <h3>Available Bus Routes</h3>
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>From</th>
-            <th>To</th>
-            <th>Time</th>
-            <th>Fare</th>
-        </tr>
-        <tr>
-            <td>Delhi</td>
-            <td>Jaipur</td>
-            <td>6:00 AM</td>
-            <td>₹500</td>
-        </tr>
-        <tr>
-            <td>Bhubaneswar</td>
-            <td>Koraput</td>
-            <td>9:00 PM</td>
-            <td>₹700</td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <!-- Footer -->
-    <center>
-        <p>&copy; 2025 Online Bus Ticket Booking</p>
-    </center>
+    <br>
+    <a href="index.html">← Back to Home</a>
+</div>
 
 </body>
 </html>
