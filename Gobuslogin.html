@@ -1,34 +1,141 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>GoBus - Login</title>
+    <title>Online Bus Ticket Booking</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+        }
+
+        header {
+            background: #1976d2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background: #0d47a1;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .banner {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .banner img {
+            width: 300px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        h2, h3 {
+            color: #0d47a1;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #aaa;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #1976d2;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
 
-<center>
-    <h2>Login Page</h2>
+<header>
+    <h1>Bus Ticket Booking</h1>
+    <p><i>Safe | Easy | Fast Travel</i></p>
+</header>
 
-    <!-- IMPORTANT FIX IS HERE -->
-    <form action="index.html" method="get">
+<nav>
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="#">Register</a>
+    <a href="#">Contact Us</a>
+</nav>
 
-        Username:<br>
-        <input type="text" name="user" required>
-        <br><br>
+<div class="container">
 
-        Password:<br>
-        <input type="password" name="pass" required>
-        <br><br>
+    <!-- ONLINE IMAGE ADDED HERE -->
+    <div class="banner">
+        <img src="https://images.unsplash.com/photo-1509749837427-ac94a2553d0e?auto=format&fit=crop&w=800&q=60" 
+             alt="Bus Travel">
+    </div>
 
-        <input type="submit" value="Login">
+    <h2>About Our Service</h2>
+    <p>
+        <b>Online Bus Booking</b> helps you book bus tickets easily.
+        You can search buses, compare prices, and book tickets from
+        the comfort of your home.
+    </p>
 
-    </form>
+    <h3>Our Features</h3>
+    <ul>
+        <li>Easy Ticket Booking</li>
+        <li>Multiple Bus Operators</li>
+        <li>Secure Payments</li>
+        <li>24/7 Support</li>
+    </ul>
 
-    <br>
-    <a href="index.html">Back to Home</a>
-</center>
+    <h3>Popular Routes</h3>
+    <table>
+        <tr>
+            <th>From</th>
+            <th>To</th>
+            <th>Fare (₹)</th>
+        </tr>
+        <tr>
+            <td>Bhubaneswar</td>
+            <td>Cuttack</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>Koraput</td>
+            <td>Visakhapatnam</td>
+            <td>450</td>
+        </tr>
+        <tr>
+            <td>Berhampur</td>
+            <td>Bhubaneswar</td>
+            <td>350</td>
+        </tr>
+    </table>
+
+</div>
 
 </body>
 </html>
-
-
-
